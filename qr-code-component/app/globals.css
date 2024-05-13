@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: hsl(218, 44%, 22%);
+}
+
+@layer base {
+  h1,
+  p {
+    @apply text-center;
+  }
+  div {
+    @apply rounded-2xl p-1.5 m-1.5;
+  }
+  img {
+    @apply rounded-2xl;
+  }
+}
